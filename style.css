@@ -14,7 +14,7 @@
     background-color: #000;
     height: 100vh;
     /* test*/
-    padding-top: 300px; /* Ajuste esse valor de acordo com a altura do seu menu */
+    padding-top: 250px; /* Ajuste esse valor de acordo com a altura do seu menu */
  }
  .interface{
     max-width: 1280px;
@@ -50,6 +50,13 @@ h2.titulo span{
     transform: scale(1.05);
  }
 
+ @media screen and (min-width: 1021px) {
+     .menu-mobile,
+         .btn-abrir-menu {
+             display: none; /* Esconde o menu mobile e o ícone de abrir o menu no desktop */
+         }
+ }
+
  /*  ESTILO DO  CABEÇALHO*/
  header{
     padding:40px 4%;
@@ -78,7 +85,7 @@ h2.titulo span{
 }
 
  header nav.menu-desktop a:hover {
-    color: #fff;
+    color: #00ff08;
     transform: scale(1.05);
     }
 
@@ -170,7 +177,7 @@ header nav.menu-desktop ul li{
 
  .topo-do-site h1{
     color: #fff;
-    font-size:42px;
+    font-size:52px;
     line-height:40px;
 
  }
@@ -187,6 +194,7 @@ header nav.menu-desktop ul li{
  .topo-do-site .img-topo-site img{
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
+
  }
 
 
@@ -219,6 +227,8 @@ header nav.menu-desktop ul li{
         border-radius: 20px;
         margin-top: 45px;
         transition: .2s;
+        gap:60;
+
     }
 
     .especialidades .especialidades-box:hover{
@@ -423,6 +433,9 @@ header nav.menu-desktop ul li{
         .menu-desktop, .btn-contato {
             display: none;
         }
+        .topo-do-site h1{
+                    font-size:32px;
+                 }
     }
 
     /* TOPO DO SITE */
@@ -439,9 +452,7 @@ header nav.menu-desktop ul li{
             width: 100%;
         }
 
-         .topo-do-site h1{
-            font-size:32px;
-         }
+
 
     /* ESTILO DAS ESPECIALIDADES */
         section.especialidades{
@@ -489,3 +500,6 @@ header nav.menu-desktop ul li{
         footer .line-footer{
             text-align: center;
         }
+    }
+    }
+    }
